@@ -1,29 +1,28 @@
 ## Funda Eren Github Sayfasına Hoşgeldiniz
 
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Başlık
+Buraya genel bilgiler yazılacak
 
 ```markdown
 Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+# Alt başlık 1
+## Alt başlık 2
+### Alt başlık 3
 
-- Bulleted
+- Buraya konu hakkında listelenme var
 - List
 
 1. Numbered
 2. List
 
-**Bold** and _Italic_ and `Code` text
+**Kodlar anlatılabilir** and _italik yazı tipinde kullanım sağlanabilir_ and `Code` text
 
 [Link](url) and ![Image](src)
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+Daha fazla detay vermek için benzeri sitelere yönlendirebilirim [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/ yönlendireceğim site uzantısı hakkında bilgi).
 
 ### Jekyll Themes
 

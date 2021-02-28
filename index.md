@@ -120,6 +120,107 @@ ls komutu ile ilgili daha fazla bilgi edinmek için help komutu kullanılmaktad�
 
 
 
+# whoami Komutu
+
+Ben kimim komutudur. Who am i yani aktif user kim onu gösterir. Bu komut yerine id -un komutu da kullanılabilmektedir. Burada biz kullanıcının funda olduğunu görmekteyiz.
+
+![image](https://user-images.githubusercontent.com/55113204/109419299-c8e33980-79dd-11eb-9d5f-50dd83fcb4de.png)
+
+# tar Komutu
+
+Arşivleme yapan komuttur. Burada -c parametresi ile tar arşivini create eder. -f ile de izin verir.
+
+![image](https://user-images.githubusercontent.com/55113204/109419322-e31d1780-79dd-11eb-8116-b6e65217b076.png)
+
+-x parametresi var olan arşivi aç
+-t parametresi tar arşivinin içeriğini listele
+-v parametresi kullanıcıya neler olduğunu anlat
+-r parametresi arşivi addle
+-u parametresi arşivi updatele
+-z parametresigzip/gunzip kullanarak sıkıştırma yap
+-remove parametresi arşivle işin bitince sil
+
+# Gzip/guzip Komutu
+
+Dosyaları gziple ve guziple arşivler.
+
+![image](https://user-images.githubusercontent.com/55113204/109419343-0051e600-79de-11eb-87a7-9737b91a5357.png)
+
+-l parametresi sıkıştırılmış dosyanın içeriğini listeleler.
+-f parametresi dosyalar açılırken benzerleri varsa üstüne yazar.
+
+![image](https://user-images.githubusercontent.com/55113204/109419347-09db4e00-79de-11eb-8440-06f3c9c1ca52.png)
+
+# apropos Komutu
+
+bBir komutun ne işlev yaptığını bilindiği ama komutun ne olduğunu unuttuğumuzda apropos komutu kullanılır. Misal sistemin ne olduğunu biliyorum ama ne işe yaradığını bilmiyorsam burada apropos komutu kullanabilirim.
+
+![image](https://user-images.githubusercontent.com/55113204/109419373-2b3c3a00-79de-11eb-8178-62b50c192cce.png)
+
+# cat Komutu
+
+Bir metin dosyasının içerisinde neler var onları görüntülemek için kullanılan komuttur.
+
+## -n Parametresi 
+
+-n parametresi ile her satırı ekrana bastırır.
+
+![image](https://user-images.githubusercontent.com/55113204/109419417-6b032180-79de-11eb-902e-dda8ed623941.png)
+
+## -E Parametresi
+
+-E parametresi ile her satırın sonuna $ işareti koyar.
+
+![image](https://user-images.githubusercontent.com/55113204/109419439-83733c00-79de-11eb-878e-5ecd03f29037.png)
+
+# mkdir Komutu
+
+Dizin yani klasör oluşturma komutudur. Biz burada fundaa isimli bi dizin oluşturduk ve -ls komutu yardımı ile görüntüledik. 
+
+![image](https://user-images.githubusercontent.com/55113204/109419463-9f76dd80-79de-11eb-9cdb-e0327c664722.png)
+
+# cp Komutu
+
+Copy paste yani bir dosyayı yada klasörü kopyalamak istenildiğinde kullanılan komuttur. 
+-r parametresi ile kullanılır sebebi ise dizinin içindeki her şey gösterilen hedef dizine kopyalanır. funda_deneme isimli dizini bulunduğu konumdan belgelere kopyaladım.
+
+![image](https://user-images.githubusercontent.com/55113204/109419499-d51bc680-79de-11eb-9cc2-d2f40a10cd0e.png)
+
+-d paratmetresi dosyanın aslını değil linkini kopyalamaktadır.
+-p parametresi ile dosyanın kullanıcı izinlerini ve passwordlarını koruyarak kopyalanmasını sağlamaktadır.
+-a parametresi diğer parametrelerle aynı kullanımdadır.
+-f parametresinde kullanıcıya hiçbir izin sorusu sorulmadan kabul edilmiş olarak düşünülerek varsa aynı dosyadan silinip tekrardan kopyalanmasını sağlayan değerdir.
+-i hedef adreste dosya mevcut ise kullanıcıya bilgi sorulur.
+-u parametresinde kopyalanacak dosyanın tarihi eski dosyadan daha yeni ise bir nevi güncel ise kopyalanmaktadır.
+
+_Cat komutu ile dosya oluşturulup dosya içeriği okunabilmektedir. Text ve script dosyalarını okuyabilmemizi sağlamaktadır. Burada deneme adında bir dosya oluşturduk ve dosyanın içine Ankara ve Istanbul isminde iki bilgi girdik. Cat komutu ile hem dosyayı oluşturabildik hemde içeriği görüntüleyebildik._
+
+![image](https://user-images.githubusercontent.com/55113204/109419537-ff6d8400-79de-11eb-8aa0-27f2a2fb3fb5.png)
+
+_Cat ile dizinlerin içine girmeden direk home üzerinden istenilen hedefe dosya oluşturulabilir._
+
+![image](https://user-images.githubusercontent.com/55113204/109419542-085e5580-79df-11eb-8af5-83daf27a27d3.png)
+
+_Cat ile bir dizinin sonuna ekleme yapılarak update yapılabilir._
+
+![image](https://user-images.githubusercontent.com/55113204/109419546-0f856380-79df-11eb-81d6-f92389f8962f.png)
+
+_Cat komutu ile iki dosya farklı bir dosyada birleştirilme yapılabilir. Burada dosya1 ve dosya2 isminde iki tane dosya oluşturdum. Içine yazdığım bilgilerin birleştirmek için dosya3 adında dosya oluştururak görüntüledim.  E harfinden sonra boşluk bırakmadığımdan dolayı f harfiyle birleşti. Burada dosya birleştirdiğimizden dolayı arka arkaya geldiğini görmekteyiz
+Satır numaraları ile görüntülemek için -n parametresi kullanmaktayız._
+
+![image](https://user-images.githubusercontent.com/55113204/109419591-465b7980-79df-11eb-96b1-76b24a174486.png)
+
+_Dizinlerin içindeki tüm içerikleri görmek için “*” kullanılmaktadır._
+
+![image](https://user-images.githubusercontent.com/55113204/109419604-5d9a6700-79df-11eb-87ec-46884a4e179b.png)
+
+_Cat hakkında daha fazla bilgi almak için - - h parametresi kullanılır._
+
+![image](https://user-images.githubusercontent.com/55113204/109419610-67bc6580-79df-11eb-8d94-805f67a70849.png)
+
+
+
+
 
 
 1. Numbered

@@ -519,7 +519,128 @@ Echo kullanarak matematiksel işlemleri ekrana bastırabiliriz.
 
 ![image](https://user-images.githubusercontent.com/55113204/109423181-99d5c380-79ef-11eb-85ee-703cc73265b4.png)
 
+# locate Komutu
 
+Hızlı olarak arama komutudur. Bir dosyanın nerde olduğunu unuttuğumuzda locate komutu ile dosyanın adını yazarak arama yapmaktayız.
+
+![image](https://user-images.githubusercontent.com/55113204/109425871-8d576800-79fb-11eb-88ba-82335a0844b1.png)
+ 
+ ## -i Parametresi
+ 
+-i parametresi ile kullanıldığında büyük küçük harfleri sorun etmeden arama yapmaktadır.
+
+# wc Komutu
+
+Bu komut sırasıyla satır sayısı, kelime sayısı ve komut sayısını ekrana bastırmaktadır.
+
+![image](https://user-images.githubusercontent.com/55113204/109425877-934d4900-79fb-11eb-8ed6-f5831c3b70b2.png)
+ 
+## -c Parametresi
+
+Karakter sayısını ekrana bastırmak için -c parametresi kullanılır.
+
+![image](https://user-images.githubusercontent.com/55113204/109425882-98aa9380-79fb-11eb-86d9-e5f6ea10aed2.png)
+ 
+## -w Parametresi
+
+Kelime sayısını göstermek için -w parametresi kullanılır.
+
+![image](https://user-images.githubusercontent.com/55113204/109425889-9ea07480-79fb-11eb-9bbd-e1fa43e3eefa.png)
+
+## -l Parametresi
+
+Satır sayısını göstermek için -l parametresi kullanılır.
+
+![image](https://user-images.githubusercontent.com/55113204/109425891-a3652880-79fb-11eb-84c5-2aa3b208246f.png)
+
+# env Komutu
+
+Environment komutu systemin propertiesi hakkında bilgi veren komuttur.
+
+![image](https://user-images.githubusercontent.com/55113204/109425900-a9f3a000-79fb-11eb-8057-f30c29496b98.png)
+
+# expand Komutu
+
+Girdi de verilen tab değerini space değerine çevirme işlemi yapmaktadır.
+
+![image](https://user-images.githubusercontent.com/55113204/109425907-aeb85400-79fb-11eb-8275-bd4b80865462.png)
+
+# free Komutu
+
+Bir işletim sisteminde belleğin ne kadarının kullanıldığı ve ne kadarının boş olduğunu göstermeye yarayan komuttur.
+
+## -h Parametresi
+
+-h parametresi kullanarak çıktımızı daha anlamlı hale çevirebiliriz.
+
+![image](https://user-images.githubusercontent.com/55113204/109425911-b5df6200-79fb-11eb-936b-c5c934d58b38.png)
+
+Burada takas ve memory kullanımını görebilmekteyiz. Ne kadarının paylaşıldığını ne kadarının meşgul olduğunu total de ne kadarlık belleğe sahip olduğumuzu görmekteyiz.
+
+# ps Komutu
+
+Ps komutu o anda çalışan işlemleri gösteren komuttur.
+
+## -A Parametresi
+
+-A parametresi kullanarak çalışan tüm işlemler gösterilmektedir.
+
+![image](https://user-images.githubusercontent.com/55113204/109425975-18386280-79fc-11eb-97f6-549a8e7ad866.png)
+
+## -ax Parametresi
+
+-ax parametresi kullanılarak o anda çalıştırabilir tüm işlemler gösterilmektedir.
+
+![image](https://user-images.githubusercontent.com/55113204/109425979-1c648000-79fc-11eb-94bf-d8934ca0192f.png)
+
+## -aux Parametresi
+
+Ps aux parametresi kullanılarak daha simple şekilde gösterilmektedir.
+
+![image](https://user-images.githubusercontent.com/55113204/109425983-24242480-79fc-11eb-8cdc-f58a6c9d34a7.png)
+ 
+## -L [istenilen_satır] Parametresi
+
+Bu parametre ile istenilen satır hakkında detaylı bilgi edinilmektedir.
+
+![image](https://user-images.githubusercontent.com/55113204/109425988-2a1a0580-79fc-11eb-8776-327b47444a68.png)
+
+## -C Parametresi
+
+-C bash parametresi çalıştırılan bash işlemleri hakkında bilgi vermektedir.
+
+![image](https://user-images.githubusercontent.com/55113204/109425995-2e462300-79fc-11eb-9e84-3f2c94b92acc.png)
+
+## -U root -u root Parametresi
+ 
+Çalıştırılmış root işlemleri hakkında bilgi almak istediğimizde -U root -u root parametresini kullanmaktayız.
+
+![image](https://user-images.githubusercontent.com/55113204/109425997-32724080-79fc-11eb-8210-cd3dd9fa4790.png)
+
+## -e Parametresi
+ 
+-e parametresi sistemde çalışan her süreç hakkında bilgi verir. 
+
+## -u Parametresi
+
+-u kullanıcı adına göre süreç bilgilerini verir.
+
+## -p Parametresi
+
+-p süreç numaralarına göre (PID) süreç bilgisi verir.
+
+
+# pstree Komutu 
+
+Süreci hiyerarşik olarak görüntülemek istersek bu komutu kullanırız. Bir ağaç gibi bize ayrıntılı anlatmaktadır. 
+ 
+ ![image](https://user-images.githubusercontent.com/55113204/109426000-3b631200-79fc-11eb-95fe-876592d1ba05.png)
+
+# top Komutu
+
+Bu süreci 3 saniyede bir yenilerek sistemin anlık sürecini bilgi verir. -d saniye parametresi şeklinde yazarak anlık güncellenen süreyi değiştirebiliriz. Q ile çıkış yaparız.
+
+![image](https://user-images.githubusercontent.com/55113204/109426004-3f8f2f80-79fc-11eb-86e4-ffe5fa7c19be.png)
 
 
 

@@ -106,13 +106,13 @@ Her satıra 1 dosya yazılarak listeleyen komuttur.
 
 ![image](https://user-images.githubusercontent.com/55113204/109418635-83713d00-79da-11eb-9f9d-144593f4b9ec.png)
 
-## --v Parametresi
+## - -v Parametresi
 
 Version bilgilerini göstermektedir.
 
 ![image](https://user-images.githubusercontent.com/55113204/109418647-9be15780-79da-11eb-8d2e-4880b0c986d4.png)
 
-## --help Parametresi
+## - -help Parametresi
 
 ls komutu ile ilgili daha fazla bilgi edinmek için help komutu kullanılmaktadır.
 

@@ -1,8 +1,8 @@
 ## Funda Eren Github Sayfasına Hoşgeldiniz
 
 
-### Başlık
-Buraya genel bilgiler yazılacak
+# ls komutu
+ls komutu aktif olarak girmek istediğimiz dosyanın veya dizinin listelenmesini sağlayan komuttur. Bu komut sayesinde klasörlerin veya dizinlerin içerisinde neler var görebilmekteyiz.
 
 ```markdown
 Syntax highlighted code block

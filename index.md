@@ -642,6 +642,343 @@ Bu süreci 3 saniyede bir yenilerek sistemin anlık sürecini bilgi verir. -d sa
 
 ![image](https://user-images.githubusercontent.com/55113204/109426004-3f8f2f80-79fc-11eb-86e4-ffe5fa7c19be.png)
 
+# head Komutu
+
+Head komutu listelenmiş dosyada default olarak ilk 10 komutu vermektedir. Biz istersek -n [değer]parametresi ile görmek istediğimiz kadar değeri listeleyebiliriz.
+
+![image](https://user-images.githubusercontent.com/55113204/109426386-94cc4080-79fe-11eb-93dc-e5ee4e79e7d6.png)
+
+# tail Komutu 
+
+Default olarak sondan 10 tane girdiyi bize çıktı olarak vermektedir. -n [değer] parametresi ile kaç değerin listelenmesini istersek çıktı olarak alabiliriz.
+
+![image](https://user-images.githubusercontent.com/55113204/109426391-9ac22180-79fe-11eb-8129-6e5cde87b86c.png)
+
+# hostname 
+
+Hostname hakkında bilgi edinmek istenirse
+
+![image](https://user-images.githubusercontent.com/55113204/109426402-a877a700-79fe-11eb-87eb-c784eeb2e407.png)
+
+Başka bir alternative olarak şu şekilde de hostname öğrenebiliriz.
+ 
+![image](https://user-images.githubusercontent.com/55113204/109426408-b4636900-79fe-11eb-8d6e-de6e40f0c24e.png)
+
+# wget Komutu
+
+Dosya indirme komutudur. Indirmek istenilen dosyanın url/dosyaadı şeklinde yazarak indirebiliriz.
+
+![image](https://user-images.githubusercontent.com/55113204/109426412-b7f6f000-79fe-11eb-9d9f-826f41d4518d.png)
+
+# curl Komutu
+
+Veri transferi sağlayan ve url ile verilerin bağlanılımını kontrol ettiğimiz komuttur.
+
+![image](https://user-images.githubusercontent.com/55113204/109426419-bd543a80-79fe-11eb-9623-756480b987d1.png)
+
+## -C - Parametresi
+
+-C - parametresi ile kesilen indirmeyi devam ettirmemiz sağlanır.
+Iki dosyanın indirim işlemi yapmak istediğimizde iki url kullarak kaydetmek istediğimiz alanı da belirterek uygulayabiliriz.
+
+![image](https://user-images.githubusercontent.com/55113204/109426428-c218ee80-79fe-11eb-8db8-0981fa0c92f7.png)
+
+# -I Parametresi 
+
+Bir web sitenin HTTP başlıklarını sorgulamak için -I parametresi kullanılır.
+
+![image](https://user-images.githubusercontent.com/55113204/109426545-4d927f80-79ff-11eb-8d2d-1cb615db8323.png)
+
+## curl ile bir domainin get isteğini alma
+
+![image](https://user-images.githubusercontent.com/55113204/109426548-52efca00-79ff-11eb-8960-6951488b9c44.png)
+ 
+Bir web sitesine girdiğimizde hangi cookielerin indirildiğini görmek için bunu bir dosyaya kaydedip görüntüleyebiliriz.
+
+![image](https://user-images.githubusercontent.com/55113204/109426550-57b47e00-79ff-11eb-93f8-48136ed70b9e.png)
+ 
+## curl ile sunucuya bir post isteği atma
+
+![image](https://user-images.githubusercontent.com/55113204/109426563-60a54f80-79ff-11eb-8d7a-b980478a1983.png)
+ 
+# id Komutu
+
+Kullanıcının id bilgilerini veren komuttur.
+ 
+![image](https://user-images.githubusercontent.com/55113204/109426568-656a0380-79ff-11eb-8e1d-7e325223454d.png)
+
+ ## -g Parametresi 
+ 
+-g parametresi ile etkili kullanıcın id numarası bastırılır.
+
+![image](https://user-images.githubusercontent.com/55113204/109426570-6b5fe480-79ff-11eb-877e-bf1c455a063c.png)
+
+# passwd Komutu
+
+Password değişimi yapmak için kullanılır.
+
+![image](https://user-images.githubusercontent.com/55113204/109426574-70249880-79ff-11eb-90c7-6260a5aed5ef.png)
+
+# kill Komutu
+
+Cevap vermeyen processleri sinyaller ile öldürmek için kill komutu kullanılır. Pid ile birlikte kullanılır. Burada PID değerini bulup kill -l ile nasıl bir kill kullanacağımızı belirlemeliyiz.
+
+![image](https://user-images.githubusercontent.com/55113204/109426582-7c105a80-79ff-11eb-9706-1df7f98afa18.png)
+
+# killal Komutu
+
+Bu komut tüm ilişkili sistemi öldürmemizi sağlayan komuttur.
+Killal -9 apache örnek verilebilir.
+
+# man Komutu
+Bir konu hakkında detaylı bilgi almak istenildiğinde man komutu kullanılır.
+
+![image](https://user-images.githubusercontent.com/55113204/109426583-816da500-79ff-11eb-8739-5ff7f396da27.png)
+ 
+# rm Komutu
+Rm komutu bir dosya yada dizin silmek için kullanılan komuttur.
+
+![image](https://user-images.githubusercontent.com/55113204/109426591-8af70d00-79ff-11eb-8b84-684c27823cac.png)
+
+## -i Parametresi 
+
+Onay isteyerek silmesini -i parametresi kullanılmaktadır. 
+
+## -r Parametresi 
+
+Alt dizin yada dosyaların silinmesini -r parametresi sağlamaktadır. 
+
+## -v Parametresi 
+Yapıalan silmeyle ilgili bilgilerin elde edilmesi için de -v parametresi kullanılmaktadır.
+
+# watch Komutu
+
+Saat hakkında bilgi veren komuttur.
+
+![image](https://user-images.githubusercontent.com/55113204/109426607-964a3880-79ff-11eb-8a5d-088564e13549.png)
+
+# sort Komutu
+
+Harf yada ilk bit sıralamasına göre dizen bir sıralama komutudur.
+
+![image](https://user-images.githubusercontent.com/55113204/109426612-9b0eec80-79ff-11eb-8a35-43d99af43be1.png)
+
+## -r Parametresi 
+
+Tersten sıralama yapılmasını istiyorsak -r parametresi kullanılır.
+
+![image](https://user-images.githubusercontent.com/55113204/109426623-a6621800-79ff-11eb-924e-df846ec18a33.png)
+ 
+# uname Komutu
+
+Makine hakkında bilgiler verir. Ilk olarak kullanılan kernel adını(linux), bilgisayarın ağ üzerindeki host adını(kali), kernel ana dağıtım bilgisini (5.5.0-kali2-amd64), yayınlandığı tarihle birlikte kernelin dağıtıma özel sürüm bilgisi, kullanılan bilgisayarın donanım adı ve kullanılan işletim sisteminin adı sırasıyla verilmektedir.
+
+![image](https://user-images.githubusercontent.com/55113204/109426651-c1348c80-79ff-11eb-9f4a-5911e3d68ee7.png)
+
+# split Komutu
+
+Boyutu çok büyük olan dosyaların daha küçük boyuttaki dosyalara bölünmesi için split komutu kullanılır.
+
+![image](https://user-images.githubusercontent.com/55113204/109426659-d4475c80-79ff-11eb-9edb-4dc18dad23a2.png)
+
+## wc -l * Parametresi
+
+Burada 13 satırlık funda2 dosyasını 5 satır şeklinde bölerek part1 isminin türevleri olan dosyalara atadım. Bu dosyaları wc -l * parametresi ile görüntülecek olursak şeklinde çıktı alırız.
+
+![image](https://user-images.githubusercontent.com/55113204/109426763-52a3fe80-7a00-11eb-8c72-cfa7181e5c12.png)
+
+# tee Komutu
+
+Dosyalara standart girdiği ve çıktıyı kopyalan komuta denir.
+
+## -a Parametresi
+
+Listelediğimiz standart çıktı logunu birbirinin üzerine yazıp eski dosyayı silmesin diye -a parametresi ile filtrelemekteyiz.
+
+![image](https://user-images.githubusercontent.com/55113204/109426770-5cc5fd00-7a00-11eb-8dd4-b4157a0b9a22.png)
+
+## Birden fazla log dosyası oluşturmak için
+
+Birden fazla log dosyası oluşturmak için de ls | tee file1 file2 … şeklinde yazabiliriz.
+
+# uptime Komutu
+
+Sistemin ne kadar süredir aktif olarak çalıştığını gösteren komuttur. Geçerli zaman, çalışma süresi, kullanıcı sayısı, ortalama yük olarak sıralanmaktadır.
+
+![image](https://user-images.githubusercontent.com/55113204/109426781-694a5580-7a00-11eb-94fb-e09d2da2b248.png)
+
+# find Komutu
+
+Bulmak istediğimiz dosyarı find komutu ile erişebiliriz. 
+
+![image](https://user-images.githubusercontent.com/55113204/109426788-70716380-7a00-11eb-8d61-70bd12b45b6a.png)
+
+Içinde bazı kelimelerin geçtiği dosyaları arıyorsak *dosya_adı şeklinde arama yapabiliriz.
+Root yetkisi vererek gizli olan dosyalar da dahil arama yapmak istiyorsak sudo su sadece tek bir defalık root yetkisine sahip olmak istiyorsak sudo araması yapabiliriz.
+
+![image](https://user-images.githubusercontent.com/55113204/109426792-76ffdb00-7a00-11eb-8905-1008b01f8114.png)
+
+Root olarak txt tipinde arama yapmak istediğimizde kullanılan komut sudo find / -name  “*txt”
+
+![image](https://user-images.githubusercontent.com/55113204/109427010-7156c500-7a01-11eb-9513-eb13eb52bea8.png)
+
+## -i Parametresi 
+
+Büyük küçük harflere karşı duyarsız olmasını istiyorsak -iname parametresi kullanılmaktadır.
+Belirli bir dizinde arama yapmak istenildiğinde ise;
+
+![image](https://user-images.githubusercontent.com/55113204/109427028-892e4900-7a01-11eb-8ed8-97dde6e0c548.png)
+
+Belgeler dizinin altında .txt uzantılı dosyaları fundaeren.png adında bir dosya oluşturacak ve içerisine sıkıştıracaktır.
+
+![image](https://user-images.githubusercontent.com/55113204/109427033-90eded80-7a01-11eb-9cf8-54fefad061ae.png)
+
+Belgelerdeki 10M altındaki dosyaları listelemektedir.
+
+![image](https://user-images.githubusercontent.com/55113204/109427036-964b3800-7a01-11eb-9097-3114d1aaade3.png)
+
+Gizli olan dosyaları görmek için find / home -type f -name “.*” komutu kullanılır.
+Bir kullanıcı arıyorsak find / -type f -user isim -name “.log.txt”
+Son 2 gün içinde değiştirilmiş dosyaları arıyorsak find / -type f -mtime 2
+1-7 gün arasındaki değişiklikleri görmek istiyorsak find / -type f -mtime +1 -mtime -7
+30 dk içinde değiştirilmiş dosyaları görmek istediğimizde find / -type f -cmin -30 parametreleri kullanılır.
+
+# scp Komutu 
+
+Cp gibi kopyalama komutu olduğunu düşünebiliriz. Kopyalayacağımız dosyayı nereye kopyalayacağımızı gösteren komuttur.
+
+![image](https://user-images.githubusercontent.com/55113204/109427054-a82cdb00-7a01-11eb-85e6-13aad74119e4.png)
+
+Eğer kendi bilgisayarımızdan başka bilgisayara dosya kopyalamak istiyorsak
+Scp dosya user@host:Nereye_kopyalanacak?
+
+![image](https://user-images.githubusercontent.com/55113204/109427065-b1b64300-7a01-11eb-858f-59b28a98d81d.png)
+
+Karşı bilgisayardan kendi bilgisayarımıza dosya kopyalamak için gerekli olan komut
+
+Scp user@host:dosya_adı nereye_kopyalanacağı?
+
+![image](https://user-images.githubusercontent.com/55113204/109427106-da3e3d00-7a01-11eb-9001-8214b79b131a.png)
+
+# grep Komutu
+
+Find komutu gibi arama yapmak için kullanılır. Dosya içinde u harfi olanları ekrana bastırmaktayız. 
+
+![image](https://user-images.githubusercontent.com/55113204/109427114-e6c29580-7a01-11eb-9f1f-dfbd59038760.png)
+
+Büyük küçük harfe duyarlıdır bundan dolayı U araması yaptığımızda sonuç vermeyecektir.
+
+![image](https://user-images.githubusercontent.com/55113204/109427130-f80ba200-7a01-11eb-92f3-c794515c8b7a.png)
+
+## -I Parametresi
+
+Büyük küçük harf duyarlılığını kaldırmak için -I parametresi kullanılmalıdır.
+
+![image](https://user-images.githubusercontent.com/55113204/109427164-27baaa00-7a02-11eb-8a93-09b9c24bf4c2.png)
+
+## -v Parametresi
+
+Bazı kelimeler dışında arama yapmak istediğimizde -v parametresi kullanarak arama yapabiliriz. Burada u harfi içeren satırlar gelmesin istedik.
+
+![image](https://user-images.githubusercontent.com/55113204/109427172-2d17f480-7a02-11eb-8836-ee93a5a95c96.png)
+
+## -r Parametresi
+
+Dizindeki tüm dosyalarda arama yapılmasını istiyorsak -r parametresi kullanmaktayız.
+
+![image](https://user-images.githubusercontent.com/55113204/109427191-4456e200-7a02-11eb-83e2-d1c4aa98b0c8.png)
+
+## -n Parametresi 
+
+Satır numarası kullanarak çıktı almak istediğimizde kullanmamı gereken parametre -n dir.
+
+![image](https://user-images.githubusercontent.com/55113204/109427201-50db3a80-7a02-11eb-88a8-d35b2e1d8a6c.png)
+
+# chown Komutu
+
+Bu komut kulanıcı değiştirmektedir. Sudo olarak yetkiyi devretmekteyiz. 
+Sudo chown user dosya şeklinde yazılan komut sıralamasıdır.
+
+
+# awk Komutu
+
+Awk programlama dili yazılımsal olarak ifade filtrelemektir. Burada -F alanı ayırmaya yarayan parametredir. Yani noktalı virgüle ayrılmış kısmı ayırmaktadır. $ ile belirtilen kısım hangi indeksleri istiyorsak o indeksleri bize verip ekrana bastırmaktadır. Biz burada 2. indeksteki değeri ekrana bastırmak istedik. 
+
+![image](https://user-images.githubusercontent.com/55113204/109427221-6b151880-7a02-11eb-8e9b-ffa3f33e638b.png)
+
+Data.txt veri akışındaki veriyi 2. indeksteki değeri alır ve ekrana bastırır.
+
+![image](https://user-images.githubusercontent.com/55113204/109427227-6fd9cc80-7a02-11eb-9f39-415aab865d61.png)
+
+3. indekste bulunan değerlerin toplam değerini ekrana bastırır.
+
+![image](https://user-images.githubusercontent.com/55113204/109427231-749e8080-7a02-11eb-80df-59010fd26fcd.png)
+ 
+2. ve 5. Indeksler arasındaki değerleri ekrana bastırır.
+
+![image](https://user-images.githubusercontent.com/55113204/109427235-7b2cf800-7a02-11eb-828f-aef4bf16dd1c.png)
+
+# sed Komutu
+
+Sed komutu bu komutu kullanarak dosyaların içinde değişiklikler yapabilmekteyiz. burada ; ile ayrılan kısımı , ile ayırma işlemi yaptık.
+
+![image](https://user-images.githubusercontent.com/55113204/109427247-8da73180-7a02-11eb-8098-47aa0886ace0.png)
+
+Istediğimiz satırı belirlediğimiz koşullarda silebiliriz. Biz burada I harfi ile başlayan satırları sildik.
+
+![image](https://user-images.githubusercontent.com/55113204/109427255-9435a900-7a02-11eb-8826-48d85b30d9a1.png)
+
+Sildiğimiz satırları geri getirebilriz.
+
+![image](https://user-images.githubusercontent.com/55113204/109427267-9bf54d80-7a02-11eb-98d2-30572faf09ac.png)
+ 
+Belirli bir indisteki satırı silebiliriz biz burada 2. Satırı sildik.
+
+![image](https://user-images.githubusercontent.com/55113204/109427273-a1529800-7a02-11eb-979a-1cd9042bef65.png)
+
+Belirli aralıktaki ifadeleri ekrana bastırabiliriz. Burada ise 1 ve 5. Satırlar arasındaki ifadeleri ekrana bastırmak istedik.
+ 
+ ![image](https://user-images.githubusercontent.com/55113204/109427276-a6afe280-7a02-11eb-9847-0e02ba43cb59.png)
+
+# axel Komutu
+
+Dosya indirmeyi sağlayan komuttur. Axeli öncelikle sistemimize kurup daha sonra istenilen dosyanın link adresi verilmelidir.
+
+![image](https://user-images.githubusercontent.com/55113204/109427283-add6f080-7a02-11eb-88ad-1ed6365a501a.png)
+
+# netcad Komutu
+
+nc komutu ağ trafiğini dinleme yapmaktadır. Burada google.com 80 portu üzerinden dinleme yaptık.
+
+![image](https://user-images.githubusercontent.com/55113204/109427291-b7f8ef00-7a02-11eb-88a2-4aed8200bfd1.png)
+
+## -nv Parametresi
+
+Hangi portların açık yada kapalı olduğunu öğrenmek için -nv parametresini kullanırız.
+
+![image](https://user-images.githubusercontent.com/55113204/109427296-bb8c7600-7a02-11eb-8b10-bd2cca74f779.png)
+
+## -nvlp Parametresi 
+
+Dosya aktarımında kullanılan parametre -nvlp parametresi kullanılır. Biz burada web sitemize 443 porttan bağlandık.
+
+![image](https://user-images.githubusercontent.com/55113204/109427298-c0512a00-7a02-11eb-9ce1-0504673e7993.png)
+
+# exiftool Komutu
+
+Bu komut bir resim dosyası hakkında ayrıntılı bilgi vermektedir.
+
+![image](https://user-images.githubusercontent.com/55113204/109427301-ca732880-7a02-11eb-8264-3ea77fd63c1d.png)
+
+# socat Komutu
+
+Zayıf güvenlik duvarlarına saldırmak için Tcp bağlantı noktası ileticisini çift yönlü bayt akışı oluşturarak kullanılır.
+
+![image](https://user-images.githubusercontent.com/55113204/109427305-cfd07300-7a02-11eb-8b00-2c3e560e2cd7.png)
+
+
+
+
 
 
 

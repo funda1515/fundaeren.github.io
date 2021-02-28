@@ -496,21 +496,27 @@ More -p parametresi ile kullanıldığında önce sayfayı temizler daha sonra g
 # echo Komutu
 
 Echo ile hangi kabukta olduğunu görmek istiyorsak echo $SHELL komutunu bastırırız.
+
 ![image](https://user-images.githubusercontent.com/55113204/109423142-68f58e80-79ef-11eb-8ee3-0e539e385f31.png)
 
 Echo ile ekrana yazı bastırabiliriz.
+
 ![image](https://user-images.githubusercontent.com/55113204/109423146-701c9c80-79ef-11eb-9bb2-e4e2c790d7b9.png)
 
 Echo ile yeni bir dosya oluşturabiliriz.
+
 ![image](https://user-images.githubusercontent.com/55113204/109423165-8591c680-79ef-11eb-9805-a4dbac0ed88b.png)
 
 Echo ile hem yeni dosya oluşturup hem de içini doldurabiliriz.
+
 ![image](https://user-images.githubusercontent.com/55113204/109423173-8b87a780-79ef-11eb-8c79-47a8dc8d7125.png)
 
 Dosyamızı güncelleyebiliriz.
+
 ![image](https://user-images.githubusercontent.com/55113204/109423175-92161f00-79ef-11eb-9eb0-37fc5c9ed48c.png)
 
 Echo kullanarak matematiksel işlemleri ekrana bastırabiliriz.
+
 ![image](https://user-images.githubusercontent.com/55113204/109423181-99d5c380-79ef-11eb-85ee-703cc73265b4.png)
 
 

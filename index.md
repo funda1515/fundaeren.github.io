@@ -4,15 +4,14 @@
 # ls komutu
 ls komutu aktif olarak girmek istediğimiz dosyanın veya dizinin listelenmesini sağlayan komuttur. Bu komut sayesinde klasörlerin veya dizinlerin içerisinde neler var görebilmekteyiz.
 
-```markdown
-Syntax highlighted code block
+
 
 # Alt başlık 1
 ## Alt başlık 2
 ### Alt başlık 3
 
-- Buraya konu hakkında listelenme var
-- List
+![image](https://user-images.githubusercontent.com/55113204/109416250-1ce62200-79ce-11eb-9748-eb8d86c99dbf.png)
+
 
 1. Numbered
 2. List

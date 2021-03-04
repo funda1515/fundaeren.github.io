@@ -1041,5 +1041,85 @@ Zayıf güvenlik duvarlarına saldırmak için Tcp bağlantı noktası ileticisi
 
 ![image](https://user-images.githubusercontent.com/55113204/109427305-cfd07300-7a02-11eb-8b00-2c3e560e2cd7.png)
 
+# LİNUX DOSYA SİSTEM HİYERARŞİSİ NEDİR?
+
+Dosy Sistem Hiyerarşisi linux bir kök dizin yapısına sahiptir. Öncelikle root olan kök dizinden sırasıyla alt dizinlere doğru ayrılır. Bu ayrılma / ile gösterilmektedir. Kök dizinimiz bizi en yetkili kullanıcımız anlamına gelmektedir. Onun sistemde yaptığı değişiklikler yetkili olduğu için bir soruna sebep olmamaktadır. Sistemde bir dizin yada dosyada kalıcı değişiklikler yapılması için yetki yükseltilmesi yapılıp root olunması gerekmektedir. Alt dizinlere yarılan linux dağıtık bir sistemdir. Dağıtık sistem tek bir makinede tüm özelliklerin bulunmamasıdır. Ağ üzerinden iletişim halinde olan bir çok makine farklı sunucuları farklı makinelere kullanıp ağ üzerinden iletişime geçebilir. Bu şekilde tek bir makinenin yükü azalarak performansı artmaktadır.
+
+## /bin dizini
+
+Temel komutlar bu dizinde çalışmaktadır. Sistemde herhangi bir sorun olduğunda bin dizini çalışmaya devam etmektedir. Komutlar çalışmaya devam ettiğinden dolayı sistemdeki sorun /bin dizini sayesinde düzelebilmektedir.
+
+![image](https://user-images.githubusercontent.com/55113204/109977832-470d4c00-7d0e-11eb-8ae8-3d99e03627a0.png)
+
+## /boot
+
+Sistemi boot etmek işletim sitemine ulaşarak bilgisayar açılırken öncelik verdiğimiz sistemin yüklenerek sisteme güç vermesi demektir. Sistemin boot öncelik ayarlarını değiştirebilmek için BIOS a girmemiz gerekir. BIOS donanım çalışırken işletim sistemi ile aradaki iletişimi kuran yazılım işletim sisteminin nereden yükleneceğini bileni donanımsal protokolleri belirleyen ve işletim sisteminin öncelikle hangi donanımı okumasını sağlayan yazılımdır.
+
+![image](https://user-images.githubusercontent.com/55113204/109978118-981d4000-7d0e-11eb-990f-8ed7cfc5cdb9.png)
+
+## /dev
+
+Linuxtaki herşey dosya şeklinde dizinlere ayrılmıştır bunların içine donanım aygıtları olan fare, modem gibi aygıtların bağlandığı portlar olan tty dizini, birincil ses kayıtlarının olduğu dsp aygıtlarını içerir.
+
+![image](https://user-images.githubusercontent.com/55113204/109978141-9d7a8a80-7d0e-11eb-8769-35b11f590d93.png)
+
+## /etc
+
+Sisteme dair tüm yapılandırmaları ve bilgisayara özel yapılandırmaları içermektedir. Çalıştırılabilir dosyalar bulunmamaktadır. 
+
+![image](https://user-images.githubusercontent.com/55113204/109978161-a4a19880-7d0e-11eb-945c-700ca3777e41.png)
+
+## /home
+
+Kişisel verilerinin depolandığı, başka programlara yaptığı değişiklikler burada depolanmaktadır. Ayrıca kullanıcının resim, müzik gibi dosyaları da burada tutulmaktadır.
+ 
+![image](https://user-images.githubusercontent.com/55113204/109978190-ac613d00-7d0e-11eb-8832-bf02dcf182cd.png)
+
+## /initrd
+
+Çekirdek yüklenmesinden sonra oluşan bellek diskin üzerinde root olarak açılmasını sağlamaktadır.
+
+## /lib
+
+Çekirdeğe ai tolan modüller ve kütüphane dosyaları burada tutulmaktadır.
+
+![image](https://user-images.githubusercontent.com/55113204/109978208-b2571e00-7d0e-11eb-832b-b9fdfdb33d1e.png)
+
+## /mnt
+
+Sabit disk ve tüm donanımsal aygıtların bağlanma noktasır. İşletim sisteminin kurulu olduğu disk buna değildir.
+## /opt
+
+İşletim sisteminden bağımsız, kurulumu zorunlu olmayan programların bulunduğu dizindir.
+
+## /proc
+
+Fiziksel dosyaların bulundurulmadığı donanımsal yapılandırmalar, süreç, bağlı aygıtların bulunduğu sanal bir dosya sistemidir.
+
+![image](https://user-images.githubusercontent.com/55113204/109978247-bd11b300-7d0e-11eb-8f6e-e79a56acd4ea.png)
+
+## /root
+
+Yetkilendirme olarak en üst yetkiye sahip olan kulllanıcıdır. Sistemdeki tüm değişikliklere izini bulunmaktadır. Kullanıcı olarak yapılamayacak tüm işlemleri root olarak yapılandırılabilir. Kalıcı olarak root olmamıza sistem izin vermemektedir. Geçici olarak root olma yetkisi için sudo komutu kullanılır ve sistem root olmanız için makinenin parolasını istemektedir.
+
+## /sbin
+
+Root tarafında kullanılacak yönetimsel ve bakımsal programlar bu dizin altında tutulmaktadır. Genellikle sistem yöneticisi tarafından kullanılmaktadır.
+
+![image](https://user-images.githubusercontent.com/55113204/109978271-c3a02a80-7d0e-11eb-904f-541e5cc0da79.png)
+
+## /user
+
+Sadece kullanılan makineye özel local klasör olan usr komutlar, programlar, kütüphaneler gibi tüm kullanıcılara paylaşılan verileri içeren dizindir.
+
+## /var
+
+Sisteme ait güvenlik duvarını ve sisteme düşen logları görüntülemek için ve e-posta, yazıcı kuyrukları bu dizin altında tutulmaktadır.
+
+## /tmp 
+
+![image](https://user-images.githubusercontent.com/55113204/109978288-c864de80-7d0e-11eb-8f4b-4e63788a623e.png)
+
+Geçici programların depolandığı dizindir. Belirli zaman aralıklarında temizlendiğinden dolayı önemli programları buraya kurmamalısınız. Çünkü makine yeniden başlatıldığında silinir. 
 
 

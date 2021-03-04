@@ -47,9 +47,10 @@ Kullanıcı şifresini değiştirmek için passwd parametresi kullanılır.
 
 ![image](https://user-images.githubusercontent.com/55113204/109428321-ac5bf700-7a07-11eb-9510-641ea684f96c.png)
 
-# Güncelleme, kurma ve kaldırma işlemleri
 
-## Güncelleme 
+# GÜNCELLEME, KURMA VE KALDIRMA İŞLEMLERİ
+
+## GÜNCELLEME
 
 Bu komut depolarda olan yeni sürümleri günceller.
 
@@ -77,7 +78,7 @@ silinen uygulamadan geriye kalmış ve artık kullanılmayan paketleri siler.
 
 -y parametresi otomatik olarak yes olarak sistemi devam ettirir bizden cevap beklemeden yes diyerek sistem kesintisiz çalışır.
 
-## Kurma
+## KURMA
 
 ## Depodan kurulum ile program kurmak
 
@@ -119,7 +120,7 @@ dpkg - - set – selections > yedeklenecek_dosya
 Eksik olan bişey varsa onları güncellemek için ise;
 apt-get deselect-upgrade komutu ile yaparız.
 
-## Joker karakterlerin kullanımı
+# JOKER KARAKTERLERİN KULLANIMI
 
 Tek seferde birden fazla dosyaya işlem yapan karakterlere joker karakterler denir. 
 Asterix işareti : ‘*’ rm funda* yaparsak funda ile ilgili her şeyi silmiş oluruz.
@@ -141,7 +142,7 @@ Istenilen değerler parantez içinde belirtilerek çağırılır.
 [!değer] burada belirtilen değerler haricindeki değerleri basar.
 [değer-değer] aralıklarını basar
 
-# Ağ Bağlantı Komutları
+# AĞ BAĞLANTI KOMUTLARI
 
 ## ifconfig Komutu
 
@@ -214,3 +215,35 @@ Crontabları listelemek istediğimizde -l parametresini kullanırız.
 ![image](https://user-images.githubusercontent.com/55113204/109428599-c1855580-7a08-11eb-8374-e5e4b4d74bd9.png)
 
 Oluşturduğumuz tüm crontabları silmek istersek -r parametresini kullanırız.
+
+# LOG DOSYALARI
+
+Log dosyaları kayıt dosyalarıdır. Bu dosyalarının nereden kaynaklandığını syslog konfigürasyon dosyasından bakabiliriz. 
+
+![image](https://user-images.githubusercontent.com/55113204/109979246-bd5e7e00-7d0f-11eb-86a2-dbdd12a7bc90.png)
+ 
+Sisteme şuanda bağlı olan kullanıcıların varlığını listeleyen log komutu /var/run ls ile bunu listelemekteyiz.
+
+![image](https://user-images.githubusercontent.com/55113204/109979269-c3ecf580-7d0f-11eb-9b8b-259da8ceebee.png)
+
+var/run içindeki who komutu sistemin son başlatılmasında hangi kullanıcının aktif olduğunu ve ne zaman aktif olduğunu görüntülemekteyiz. Ayrıca hangi id aldığını da görmekteyiz.
+
+![image](https://user-images.githubusercontent.com/55113204/109979288-c8b1a980-7d0f-11eb-896a-c8e7e8363981.png)
+
+Utmp şuandaki bağlanan kullanıcılar hakkında bilgi verirken wtmp ise daha önce bağlanmış kullanıcılar hakkında bilgi vermektedir.
+
+![image](https://user-images.githubusercontent.com/55113204/109979308-cd765d80-7d0f-11eb-8891-face8cf14950.png)
+
+Last hem geçmişte hemde şuanda kayıtlı ola kullanıcıları listeler.
+
+![image](https://user-images.githubusercontent.com/55113204/109979329-d23b1180-7d0f-11eb-9fc8-c09e22224ed4.png)
+
+Bad logların listesini lastb komutu ile bakarız.
+
+![image](https://user-images.githubusercontent.com/55113204/109979345-d6ffc580-7d0f-11eb-84c2-a78a8323d44d.png)
+
+Syslog ağ üzerinden gelen TCP UDP portlarını dinleyenilen bir C kütüphanesidir. 
+
+Ryslog ise ip bazlı kısaltmalar ile herhangi bir bilgiyi log dosyasını istediğimiz bir log dosyasına yönlendirebiliriz. 
+
+

@@ -1,5 +1,5 @@
 
-# KALİ LİNUX KOMUTLAR VE PARAMETRELER
+# KALİ LİNUX KOMUTLAR PARAMETRELER VE GENEL BİLGİLER
 
 
 
@@ -314,7 +314,7 @@ Bir dosya veya veri akışı için sağlama toplamı değerini veren komuttur. �
 
 ![image](https://user-images.githubusercontent.com/55113204/109421201-6727cd00-79e7-11eb-90df-79c816cf71c1.png)
 
-# History Komutu
+# history Komutu
 
 Daha önce kullandığımız komutları görmek istediğimizde bu komut kullanılır.
 
@@ -328,7 +328,7 @@ Bir komutu tekrar yazıp çalıştırmak yerine history üzerinde işlenmiş say
 
 ![image](https://user-images.githubusercontent.com/55113204/109421455-6e9ba600-79e8-11eb-9e15-feb64370d693.png)
 
-# Cut Komutu
+# cut Komutu
 
 Bu komut bir dosya veya dizinde belirli bir kısmı almak istediğimizde kullanılır. Ilk olarak -c kullanımı görelim. Burada 5. Biti ekrana bastırılır.
 
@@ -897,7 +897,72 @@ Satır numarası kullanarak çıktı almak istediğimizde kullanmamı gereken pa
 # chown Komutu
 
 Bu komut kulanıcı değiştirmektedir. Sudo olarak yetkiyi devretmekteyiz. 
-Sudo chown user dosya şeklinde yazılan komut sıralamasıdır.
+
+Sudo chown user dosya şeklinde yazılan komut sıralamasıdır. 
+
+Bir dosyanın kulllanıcısını değiştirebiliriz. Burada funda kullanıcılı bir dosyayı fatma kullanıcısının dosyası olarak değiştirdik.  Ls -l komutu ile değişip değişmediğini görüntüledik.
+
+![image](https://user-images.githubusercontent.com/55113204/109976552-f3e6c980-7d0c-11eb-8208-5584b59b55fa.png)
+
+![image](https://user-images.githubusercontent.com/55113204/109976569-f77a5080-7d0c-11eb-8efc-e1d944fa3705.png)
+
+Aynı şekilde grup bilgisi de değiştirilebilir. Grubu funda olan fatma kullanıcılı dosyanın grubunda fatma olarak değiştirebiliriz.
+
+![image](https://user-images.githubusercontent.com/55113204/109976598-019c4f00-7d0d-11eb-8b3b-dc736ea477fb.png)
+
+![image](https://user-images.githubusercontent.com/55113204/109976616-04973f80-7d0d-11eb-8e24-5b7fce3acc2c.png)
+
+Kullanıcıyı değiştirmeden sadece grubu da değiştirebiliriz. Biz burada kullanıcısı ve grubu funda olan deneme ismindeki dosyayı kullanıcısını değiştirmeden grubunu fatma yaptık.
+
+![image](https://user-images.githubusercontent.com/55113204/109976641-0d881100-7d0d-11eb-836b-db071b1a7769.png)
+
+![image](https://user-images.githubusercontent.com/55113204/109976650-11b42e80-7d0d-11eb-8158-176ddce62ef3.png)
+
+Dizinlerinde kullanıcılarını değiştirebilmekteyiz. Kullanıcısı funda olan bir dizinin kullanıcısını fatma olarak değiştirdik.
+
+![image](https://user-images.githubusercontent.com/55113204/109976673-1973d300-7d0d-11eb-9aff-404d7baa0d15.png)
+
+![image](https://user-images.githubusercontent.com/55113204/109976688-1ed11d80-7d0d-11eb-9ccb-1d37de552abf.png)
+
+Sadece grubu da değiştirebiliriz. Grubu funda olan bir dizinin grubunu fatma olarak değiştirdik.
+
+![image](https://user-images.githubusercontent.com/55113204/109976719-27295880-7d0d-11eb-8b05-945c526b71e2.png)
+
+![image](https://user-images.githubusercontent.com/55113204/109976740-2c86a300-7d0d-11eb-9b83-ae277e9d5d06.png)
+
+![image](https://user-images.githubusercontent.com/55113204/109976756-301a2a00-7d0d-11eb-8c2f-490d682760b7.png)
+
+Hem kullanıcıyı hemde grubu değiştirebiliyoruz.
+
+![image](https://user-images.githubusercontent.com/55113204/109976790-37d9ce80-7d0d-11eb-99fb-529409d4879d.png)
+
+![image](https://user-images.githubusercontent.com/55113204/109976811-3b6d5580-7d0d-11eb-9dad-5d0283210f8c.png)
+
+![image](https://user-images.githubusercontent.com/55113204/109976828-3f997300-7d0d-11eb-85b3-194f3b97594f.png)
+
+Sembolik bir bağlantı mevcut bir fiziksel dosyaya referans olan linklere soft link denmektedir. Biz burada soft linkte oluşturabiliriz.
+
+![image](https://user-images.githubusercontent.com/55113204/109976872-488a4480-7d0d-11eb-8141-08f17178bcc6.png)
+
+![image](https://user-images.githubusercontent.com/55113204/109976889-4b853500-7d0d-11eb-895f-634a927402cb.png)
+
+Sembolik linkte kullanıcıyı değiştirsek fiziksel dosyanın da kullanıcısı değişmektedir. Burada sembolik linkin değil fiziksel dosyanın sahipliğini değiştirdik.
+
+![image](https://user-images.githubusercontent.com/55113204/109976918-5344d980-7d0d-11eb-877c-bcc314dc5602.png)
+
+![image](https://user-images.githubusercontent.com/55113204/109976934-563fca00-7d0d-11eb-996e-67911de64c87.png)
+
+![image](https://user-images.githubusercontent.com/55113204/109976948-59d35100-7d0d-11eb-9e9a-6119ec71a07d.png)
+
+Eğer sembolik linkinde sahipliğini değiştirmek istersek şu şekilde olur.
+
+![image](https://user-images.githubusercontent.com/55113204/109976978-62c42280-7d0d-11eb-860b-cf86cd398571.png)
+
+![image](https://user-images.githubusercontent.com/55113204/109976991-6657a980-7d0d-11eb-8a10-3920920516d2.png)
+
+![image](https://user-images.githubusercontent.com/55113204/109976999-68ba0380-7d0d-11eb-8738-d990ae768a9c.png)
+
+-R parametresi ile de tüm dizin ve alt dizinlerin sahipliğini ve grubunu kesin olarak değiştirebiliriz.
 
 
 # awk Komutu

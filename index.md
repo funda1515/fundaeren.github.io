@@ -1400,6 +1400,7 @@ Istenilen değerler parantez içinde belirtilerek çağırılır.
 
 
 
+
 # AĞ BAĞLANTI KOMUTLARI
 
 ## ifconfig Komutu

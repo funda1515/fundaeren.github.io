@@ -1,9 +1,10 @@
-theme: jekyll-theme-architect
-title: pentest günlüklerim
-url: "https://github.com/fundaeren/fundaeren.github.io"
+title: Info UMMU Ternate
+description: "Prodi Informatika UMMU Ternate (temp)"
+url: "https://infoummu.github.io"
 author:
-  name: "Funda EREN"
-  url: "https://github.com/fundaeren/fundaeren.github.io"
+  name: "Informatika UMMU"
+  email: "infoummu@outlook.com"
+  url: "https://infoummu.github.io/hacker-blog"
 
 # Build settings
 # baseurl: /info
@@ -28,14 +29,17 @@ defaults:
 # Plugins
 #gems:
 plugins:
-  jekyll-theme-architect
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-seo-tag
 
 # Custom variables
+version: "1.0.0"
 
 # Options
 custom_header: false
 custom_nav_footer: false
 reverse: false
 # Custom variables
-owner : "pentest_gunluklerim"
-year : "2021"
+owner : "Informatika_UMMU"
+year : "2018"

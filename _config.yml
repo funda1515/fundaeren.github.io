@@ -1,23 +1,19 @@
-etitle: Pentest Günlüğüm
-description: "Prodi Informatika UMMU Ternate (temp)"
-url: "Pentest Günlüğüm"
+title: Pentest Günlüğüm
+description: "Blog about cyber security stuff"
 author:
-  name: "Informatika UMMU"
+  name: "Funda EREN"
   email: "pentestgunlugum@gmail.com"
-  url: "https://github.com/fundaeren/fundaeren.github.io"
+  url: "https://fundaeren.github.io/"
 
-# Build settings
-# baseurl: /info
 baseurl: /
-# Change this to your relative path (ex: /blog/), or leave just a /
-#markdown: kramdown
+
+google_analytics: UA-155400528-1
 source: .
 destination: ./_site
 permalink: /:title
-paginate: 
-paginate_path: /page:num/
-#port: 9005
-# Default values
+paginate: 4
+paginate_path: /page/:num/
+
 defaults:
   -
     scope:
@@ -26,20 +22,12 @@ defaults:
     values:
       layout: "post"
 
-# Plugins
-#gems:
+future: true
 plugins:
+  - jekyll-seo-tag
   - jekyll-paginate
   - jekyll-sitemap
-  - jekyll-seo-tag
+  - jekyll-redirect-from
 
-# Custom variables
-version: "1.0.0"
-
-# Options
-custom_header: false
-custom_nav_footer: false
-reverse: false
-# Custom variables
-owner : "Informatika_UMMU"
-year : "2018"
+owner : "ls4cfk"
+year : "2020"

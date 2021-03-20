@@ -2,11 +2,6 @@
 layout: page
 title: Archive
 ---
-<!--# Hanya Halaman Contoh, -->
-
-## All Post
-
---- 
 
 <section>
   {% if site.posts[0] %}

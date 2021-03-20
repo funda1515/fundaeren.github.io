@@ -1,7 +1,7 @@
 ---
 layout: page
-title: About
+title: Başlıklar
 ---
+# Kali Linux
 
-Selam benim adım Funda
 

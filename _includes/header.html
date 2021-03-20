@@ -1,17 +1,25 @@
-<div class="header-wrapper">
-  <header>
+<header>
+  <div>
+    <a href="{{ "/" | prepend: site.baseurl | replace: '//', '/' }}">
+    {% assign owner_first_name = site.owner | split: " " %}
+    <h1>{{ owner_first_name[0] | downcase }}@home:~$</h1>
+    </a>
+		
+<STYLE TYPE="text/css">
+  body,pre,b { font-size: 10pt; line-height: 12pt;
+   font-family: "Bitstream Vera Sans Mono", Menlo, "Courier New", Courier, monospace }
+  b { font-weight: bold; color:#e64141; background:#292929; position:relative; }
+  body { width: 60em; margin: 0.5em auto; }
+  pre { position:relative; }
+.c { height:140pt;text-align:center; width: 100%; overflow:hidden; cursor:default;BGCOLOR="#292929" TEXT="#9b9b9b" LINK="#00FF00" VLINK="#44FF44" ALINK="#FFFFFF"}
+</STYLE>
+    
+     <div class="header-links">
+      {% include links.html %}
+ </div>
+ </div>
 
-    <div class="site-title">
-      <a href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}">
-        {{ site.title }}
-      </a>
-    </div>
-
-    <nav>
-      <ul class="first-level">
-        {% include links.html %}
-      </ul>
-    </nav>
-
-  </header>
-</div>
+<!--&copy https://www.fuzzysecurity.com/index.html-->
+<SCRIPT LANGUAGE="JavaScript1.1">
+ var p=0,q=-12;function a(){if(window.setTimeout&&document.getElementsByTagName){var o=12*(2<<6);var b=document.getElementsByTagName("pre")[0];b.style.top=(p-o)+"pt";var l=document.getElementsByTagName("b");var o=-(p-o)+"pt";for(var a in l){if(l[a].style)l[a].style.top=o;}p+=q;if(p<-2<<9||p>=0)q=-q;window.setTimeout(this.a,2<<6);}}a();</SCRIPT>
+</header>

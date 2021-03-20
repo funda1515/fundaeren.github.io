@@ -1,3 +1,3 @@
-I"L2<h1 id="pasif-aktif">Aktif-Pasif Bilgi Toplama</h1>
-<h2 id="owasp-tbilisictf">Pasif Bilgi Toplama</h2>
+I"L2<h1 id="owasp-tbilisictf">Aktif-Pasif Bilgi Toplama</h1>
+<h2>Pasif Bilgi Toplama</h2>
 <p>Pasif bilgi toplama, bilgi topladığımız kişi veya kurumun haberi olmadan, sistemde log bırakmadan, internette açık olan bilgileri elde etmektir. Bu arama tipinde çeşitli uygulamalar ve yöntemler kullanılır. </p>
